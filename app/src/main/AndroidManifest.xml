@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Autoservice">
         <activity
+            android:name=".MakeApplication"
+            android:exported="false" />
+        <activity
             android:name=".FrontPageWorker"
             android:exported="false" />
         <activity

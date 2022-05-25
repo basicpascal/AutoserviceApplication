@@ -6,4 +6,12 @@
     <string name="register">Зарегистрироваться</string>
     <string name="authorization">Авторизация</string>
     <string name="to_register">Регистрация</string>
+    <string name="action_add_application">Создать заявку</string>
+    <string name="action_settings">Настройки</string>
+    <string name="add_application">Добавить заявку</string>
+    <string name="application_name">Название заявки</string>
+    <string name="car_make">Марка автомобиля</string>
+    <string name="car_number">Госномер автомобиля</string>
+    <string name="work_description">Описание работы</string>
+    <string name="make_application">Создать заявку</string>
 </resources>
