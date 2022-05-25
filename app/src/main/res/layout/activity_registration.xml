@@ -10,15 +10,17 @@
         android:id="@+id/TextName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="160dp"
+        android:layout_marginTop="124dp"
         android:ems="10"
+        android:hint="@string/name"
         android:inputType="textPersonName"
         android:minHeight="48dp"
-        android:hint="@string/name"
+        android:textColorHint="#757575"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:importantForAutofill="no" />
 
     <EditText
         android:id="@+id/TextEmail"
@@ -26,26 +28,31 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
         android:ems="10"
+        android:hint="@string/email"
         android:inputType="textEmailAddress"
         android:minHeight="48dp"
-        android:hint="@string/email"
+        android:textColorHint="#757575"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TextName" />
+        app:layout_constraintTop_toBottomOf="@+id/TextName"
+        android:importantForAutofill="no" />
 
     <EditText
         android:id="@+id/TextPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="66dp"
+        android:layout_marginTop="64dp"
         android:ems="10"
+        android:hint="@string/password"
         android:inputType="textPassword"
         android:minHeight="48dp"
-        android:hint="@string/password"
+        android:textColorHint="#757575"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TextEmail" />
+        app:layout_constraintTop_toBottomOf="@+id/TextEmail"
+        android:importantForAutofill="no" />
 
     <Button
         android:id="@+id/RegisterButton"
@@ -54,8 +61,8 @@
         android:text="@string/register"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TextPassword"
-        app:layout_constraintVertical_bias="0.238" />
+        app:layout_constraintVertical_bias="0.308" />
 </androidx.constraintlayout.widget.ConstraintLayout>
