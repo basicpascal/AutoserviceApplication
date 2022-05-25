@@ -43,7 +43,7 @@ public class Registration extends AppCompatActivity {
                             database.child("Users").child(mAuth.getCurrentUser().getUid()).child("name").setValue(value_name);
                             database.child("Users").child(mAuth.getCurrentUser().getUid()).child("email").setValue(email.getText().toString());
                             database.child("Users").child(mAuth.getCurrentUser().getUid()).child("password").setValue(password.getText().toString());
-                            //database.child("Users").child(mAuth.getCurrentUser().getUid()).child("status").setValue(status);
+                            database.child("Users").child(mAuth.getCurrentUser().getUid()).child("status").setValue("Worker");
 
                             Intent intent = new Intent(Registration.this, Authorization.class);
                             startActivity(intent);
