@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Autoservice</string>
+    <string name="name">Имя пользователя</string>
+    <string name="email">Электронная почта</string>
+    <string name="password">Пароль</string>
+    <string name="register">Зарегистрироваться</string>
+    <string name="authorization">Авторизация</string>
+    <string name="to_register">Регистрация</string>
+</resources>
