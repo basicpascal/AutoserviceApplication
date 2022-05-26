@@ -10,71 +10,72 @@
         android:id="@+id/TextApplicationName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="156dp"
+        android:layout_marginTop="100dp"
+        android:autofillHints=""
         android:ems="10"
+        android:hint="@string/application_name"
         android:inputType="text"
         android:minHeight="48dp"
-        android:hint="@string/application_name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:autofillHints="" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/TextCarMake"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="32dp"
+        android:autofillHints=""
         android:ems="10"
+        android:hint="@string/car_make"
         android:inputType="text"
         android:minHeight="48dp"
-        android:hint="@string/car_make"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TextApplicationName"
-        android:autofillHints="" />
+        app:layout_constraintTop_toBottomOf="@+id/TextApplicationName" />
 
     <EditText
         android:id="@+id/TextCarNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="32dp"
+        android:autofillHints=""
         android:ems="10"
+        android:hint="@string/car_number"
         android:inputType="text"
         android:minHeight="48dp"
-        android:hint="@string/car_number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TextCarMake"
-        android:autofillHints="" />
+        app:layout_constraintTop_toBottomOf="@+id/TextCarMake" />
 
     <EditText
         android:id="@+id/TextWorkDescription"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="32dp"
+        android:autofillHints=""
         android:ems="10"
+        android:hint="@string/work_description"
         android:inputType="text"
         android:minHeight="48dp"
-        android:hint="@string/work_description"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TextCarNumber"
-        android:autofillHints="" />
+        app:layout_constraintTop_toBottomOf="@+id/TextCarNumber" />
 
     <Button
         android:id="@+id/MakeApplicationButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="80dp"
         android:text="@string/make_application"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TextWorkDescription"
-        app:layout_constraintVertical_bias="0.138" />
+        app:layout_constraintVertical_bias="0.497" />
 </androidx.constraintlayout.widget.ConstraintLayout>

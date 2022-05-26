@@ -21,6 +21,8 @@ public class MakeApplication extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_make_application);
 
+        setTitle("Создание заявки на ремонт");
+
         EditText application_name = findViewById(R.id.TextApplicationName);
         EditText car_make = findViewById(R.id.TextCarMake);
         EditText car_number = findViewById(R.id.TextCarNumber);
@@ -35,9 +37,9 @@ public class MakeApplication extends AppCompatActivity {
                 String CarNumber = car_number.getText().toString();
                 String WorkDescription = work_description.getText().toString();
 
-                database.child("Applications").child(AppName + " Application").child("Car make").setValue(CarMake);
-                database.child("Applications").child(AppName + " Application").child("Car number").setValue(CarNumber);
-                database.child("Applications").child(AppName + " Application").child("Work description").setValue(WorkDescription);
+                database.child("Applications").child("Заявка: " + AppName).child("Car make").setValue(CarMake);
+                database.child("Applications").child("Заявка: " + AppName).child("Car number").setValue(CarNumber);
+                database.child("Applications").child("Заявка: " + AppName).child("Work description").setValue(WorkDescription);
 
                 Intent intent = new Intent(MakeApplication.this, FrontPageAdmin.class);
                 startActivity(intent);
