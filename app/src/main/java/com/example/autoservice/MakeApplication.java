@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -36,6 +37,8 @@ public class MakeApplication extends AppCompatActivity {
                 database.child("Applications").child(AppName + " Application").child("Car make").setValue(CarMake);
                 database.child("Applications").child(AppName + " Application").child("Car number").setValue(CarNumber);
                 database.child("Applications").child(AppName + " Application").child("Work description").setValue(WorkDescription);
+
+                Toast.makeText(MakeApplication.this,"Заявка успешно создана",Toast.LENGTH_LONG).show();
             }
         });
     }
