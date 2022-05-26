@@ -2,6 +2,7 @@ package com.example.autoservice;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -37,6 +38,9 @@ public class MakeApplication extends AppCompatActivity {
                 database.child("Applications").child(AppName + " Application").child("Car make").setValue(CarMake);
                 database.child("Applications").child(AppName + " Application").child("Car number").setValue(CarNumber);
                 database.child("Applications").child(AppName + " Application").child("Work description").setValue(WorkDescription);
+
+                Intent intent = new Intent(MakeApplication.this, FrontPageAdmin.class);
+                startActivity(intent);
 
                 Toast.makeText(MakeApplication.this,"Заявка успешно создана",Toast.LENGTH_LONG).show();
             }

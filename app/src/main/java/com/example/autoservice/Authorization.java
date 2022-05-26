@@ -39,8 +39,6 @@ public class Authorization extends AppCompatActivity {
         EditText login = findViewById(R.id.TextEmailAuth);
         EditText password = findViewById(R.id.TextPasswordAuth);
 
-        EditText user_name = findViewById(R.id.TextName);
-
         to_register_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -53,7 +51,6 @@ public class Authorization extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 mAuth.signInWithEmailAndPassword(login.getText().toString(), password.getText().toString()).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                    String UserName = user_name.getText().toString();
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
@@ -70,8 +67,6 @@ public class Authorization extends AppCompatActivity {
                                         Intent intent2 = new Intent(Authorization.this, FrontPageWorker.class);
                                         startActivity(intent2);
                                     }
-                                    Toast.makeText(Authorization.this,"Добро пожаловать, " + UserName + "!",Toast.LENGTH_LONG).show();
-
                                 }
 
                                 @Override
